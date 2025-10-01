@@ -1,7 +1,7 @@
 from bio import SeqIO
 
 #read single sequence from Fasta
-record=SeqIO.read("sequence.fasta.txt",'fasta')
+record=SeqIO.read("sequence.fasta",'fasta')
 seq=record.seq.upper()
 
 #Nucleotide count
