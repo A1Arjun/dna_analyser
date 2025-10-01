@@ -9,7 +9,7 @@ def get_codons(seq):
 codon_counts = {}
 
 # Read sequences from FASTA
-for record in SeqIO.parse("multiseq.fasta", "fasta"):
+for record in SeqIO.parse("multipleseq.fasta", "fasta"):
     seq = record.seq.upper()
     codons = get_codons(seq)
     for codon in codons:
