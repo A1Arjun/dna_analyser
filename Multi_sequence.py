@@ -1,7 +1,7 @@
 from Bio import SeqIO
 
 # Read multi sequences from FASTA
-for record in SeqIO.parse("multiseq.fasta",'fasta'):
+for record in SeqIO.parse("multipleseq.fasta",'fasta'):
   seq = record.seq.upper()
 
   print(f"\n-- Analyzing: {record.id}")
